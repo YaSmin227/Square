@@ -13,7 +13,7 @@ export const router = createBrowserRouter(
 
       {/* this route for login and sign up pages without any layout  */}
       <Route path="/" element={<AuthLayout />}>
-        <Route path="login" element={<Login_2 />} />
+        <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
       </Route>
     </>
