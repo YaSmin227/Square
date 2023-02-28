@@ -7,7 +7,7 @@ const Login_2 = () => {
         <>
             <Header
                 title="Sign In"
-                heading="Login to your account"
+                heading="Just sign in if you have an account in here. Enjoy our Website"
             />
             <Login/>
         </>

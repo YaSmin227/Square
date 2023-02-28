@@ -24,7 +24,7 @@ export default function Input({
                 name={name}
                 type={type}
                 required={isRequired}
-                className={fixedInputClass + customClass}
+                className={fixedInputClass }
                 placeholder={placeholder}
             />
         </div>

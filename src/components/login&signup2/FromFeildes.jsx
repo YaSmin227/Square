@@ -1,7 +1,6 @@
 const loginFields = [
     {
-        labelText: "Email address",
-        labelFor: "email-address",
+        labelText: "Your Email / Username",
         id: "email-address",
         name: "email",
         type: "email",
@@ -11,7 +10,6 @@ const loginFields = [
     },
     {
         labelText: "Password",
-        labelFor: "password",
         id: "password",
         name: "password",
         type: "password",
@@ -24,7 +22,6 @@ const loginFields = [
 const signupFields = [
     {
         labelText: "Username",
-        labelFor: "username",
         id: "username",
         name: "username",
         type: "text",
@@ -34,7 +31,6 @@ const signupFields = [
     },
     {
         labelText: "Email address",
-        labelFor: "email-address",
         id: "email-address",
         name: "email",
         type: "email",
@@ -44,7 +40,6 @@ const signupFields = [
     },
     {
         labelText: "Password",
-        labelFor: "password",
         id: "password",
         name: "password",
         type: "password",
@@ -54,7 +49,6 @@ const signupFields = [
     },
     {
         labelText: "Confirm Password",
-        labelFor: "confirm-password",
         id: "confirm-password",
         name: "confirm-password",
         type: "password",

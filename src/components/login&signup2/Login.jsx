@@ -3,11 +3,12 @@ import { ActionButton } from './ActionButton';
 import { loginFields } from "./FromFeildes";
 import Input from "./Input";
 import ExtraActions from './Remember&Forgepass'
+import LoginSign_Question from './loginSign_Question'
 
 const fields = loginFields;
-let feildsIdState={};
+let feildsIdState = {};
 // get object of inputs id,s text
-fields.forEach(field => feildsIdState[field.id]='');
+fields.forEach(field => feildsIdState[field.id] = '');
 
 export default function Login() {
     const [loginState, setLoginState] = useState(feildsIdState);
@@ -15,10 +16,9 @@ export default function Login() {
     const handleChange = (e) => {
         setLoginState({ ...loginState, [e.target.id]: e.target.value })
     }
-    console.log(loginState);
 
     return (
-        <form className="mt-8 space-y-6" onSubmit={(e)=>e.preventDefault()}>
+        <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="-space-y-px">
                 {
                     fields.map(field =>
@@ -27,7 +27,6 @@ export default function Login() {
                             handleChange={handleChange}
                             value={loginState[field.id]}
                             labelText={field.labelText}
-                            labelFor={field.labelFor}
                             id={field.id}
                             name={field.name}
                             type={field.type}
@@ -38,9 +37,12 @@ export default function Login() {
                     )
                 }
             </div>
-            <ExtraActions/>
-            <ActionButton type='submit' text='Login'/>
-            
+            <ExtraActions />
+            <ActionButton type='submit' text='Login' />
+            <LoginSign_Question
+                link='/signup'
+                question='Can’t login ? '
+                link_text='Sign up for new user?' />
         </form>
     )
 }
