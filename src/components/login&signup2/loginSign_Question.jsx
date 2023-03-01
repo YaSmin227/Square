@@ -7,7 +7,7 @@ const LoginSign_Question = ({
 }) => {
   return (
     <>
-      <div className="flex gap-2 text-[#0062FF] dark:text-[#FAFAFB] items-center justify-center mt-4 text-xs">
+      <div className="flex gap-2 text-[#0062FF]  font-semibold dark:text-[#FAFAFB] items-center justify-center mt-4 text-xs">
         <Link to="/">{question}</Link>
         <Link to={link}>{link_text}</Link>
       </div>

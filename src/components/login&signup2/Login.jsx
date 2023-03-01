@@ -3,7 +3,7 @@ import { ActionButton } from './ActionButton';
 import { loginFields } from "./FromFeildes";
 import Input from "./Input";
 import ExtraActions from './Remember&Forgepass'
-import LoginSign_Question from './loginSign_Question'
+
 
 const fields = loginFields;
 let feildsIdState = {};
@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     return (
-        <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
+        <form className="mt-2 max-[576px]:mt-1 bg-white dark:bg-[#1C1C24] dark:text-[#FAFAFB] p-7 rounded-3xl  w-[540px] max-[576px]:w-[90%] flex flex-col  justify-center gap-3 " onSubmit={(e) => e.preventDefault()}>
             <div className="-space-y-px">
                 {
                     fields.map(field =>
@@ -39,10 +39,7 @@ export default function Login() {
             </div>
             <ExtraActions />
             <ActionButton type='submit' text='Login' />
-            <LoginSign_Question
-                link='/signup'
-                question='Can’t login ? '
-                link_text='Sign up for new user?' />
+            
         </form>
     )
 }
